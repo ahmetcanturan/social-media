@@ -9,6 +9,26 @@ const getAllPosts = async (req, res) => {
         res.status(500).redirect("/")
     }
 }
+const getPostById = async (req, res) => {
+    try {
+        if (validate(req, res) !== undefined) { return }
+        const json = await service.getPostById(req.params.postId)
+        res.status(201).send(json)
+    } catch (error) {
+        console.log(error)
+        res.status(500).redirect("/")
+    }
+}
+const getAllPostsOfUserByUserId = async (req, res) => {
+    try {
+        if (validate(req, res) !== undefined) { return }
+        const json = await service.getAllPostsOfUserByUserId(req.params.userId)
+        res.status(201).send(json)
+    } catch (error) {
+        console.log(error)
+        res.status(500).redirect("/")
+    }
+}
 const createPost = async (req, res) => {
     try {
         if (validate(req, res) !== undefined) { return }
@@ -40,4 +60,4 @@ const deletePost = async (req, res) => {
     }
 }
 
-export { getAllPosts, createPost, updatePost, deletePost }
+export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost }

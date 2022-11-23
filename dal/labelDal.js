@@ -2,14 +2,11 @@ import db from "../db/connect.js"
 import { forUpdate } from "../utils/index.js"
 //* Table Name
 const table = "label"
-//* Keys of Table
-const keys = ["name"]
-
 
 const DataAccess = {
     async create(data) {
         return new Promise((resolve, reject) => {
-            const query = `INSERT INTO ${table} (${keys}) VALUES (?)`
+            const query = `INSERT INTO ${table} (${Object.keys(data)}) VALUES (?)`
             db.query(query, [Object.values(data)], (err, result) => {
                 if (err) {
                     console.log(err)
@@ -33,23 +30,36 @@ const DataAccess = {
             const query = `SELECT * FROM ${table} WHERE Id=?`
             db.query(query, [id], (err, result) => {
                 if (err) reject(err)
-                else resolve(result)
+                else (result[0]?.Id) ? resolve(result[0]) : resolve(null)
             })
         })
     },
-    async getByWhere(value, where) {
+    async findOne(data) {
         return new Promise((resolve, reject) => {
-            const query = `SELECT * FROM ${table} WHERE ${where}=?`
-            db.query(query, [value], (err, result) => {
+            const query = `SELECT * FROM ${table} WHERE ${Object.keys(data)}=?`
+            db.query(query, [Object.values(data)], (err, result) => {
                 if (err) reject(err)
-                else resolve(result)
+                else {
+                    (result[0]?.Id) ? resolve(result[0]) : resolve(null)
+                }
+            })
+        })
+    },
+    async findWhere(data) {
+        return new Promise((resolve, reject) => {
+            const query = `SELECT * FROM ${table} WHERE ${Object.keys(data)}=?`
+            db.query(query, [Object.values(data)], (err, result) => {
+                if (err) reject(err)
+                else {
+                    (result[0]?.Id) ? resolve(result) : resolve(null)
+                }
             })
         })
     },
     async updateById(id, data) {
         return new Promise((resolve, reject) => {
-            const query = `UPDATE ${table} SET ${forUpdate(keys)} WHERE Id=${id}`
-            db.query(query, [Object.values(data)], (err, result) => {
+            const query = `UPDATE ${table} SET ${forUpdate(data)} WHERE Id=${id}`
+            db.query(query, Object.values(data), (err, result) => {
                 if (err) reject(err)
                 else resolve(result)
             })
@@ -64,7 +74,6 @@ const DataAccess = {
             })
         })
     },
-
 }
 
 

@@ -1,11 +1,12 @@
 import express from "express"
 import * as controller from "../controllers/postController.js"
-import validator from "../validations/postValidator.js"
-
+import * as validator from "../validations/index.js"
 const router = express.Router()
 
 router.get("/getAllPosts", controller.getAllPosts)
-router.post("/create", [validator.createPost()], controller.createPost)
-router.put("/updateById/:postId", [validator.paramValidateId(), validator.updatePost()], controller.updatePost)
-router.delete("/deleteById/:postId", [validator.paramValidateId()], controller.deletePost)
+router.get("/getPostById/:postId", [validator.Post.justValidateId()], controller.getPostById)
+router.get("/getAllPostsOfUserByUserId/:userId", [validator.User.paramValidateId()], controller.getAllPostsOfUserByUserId)
+router.post("/create", [validator.Post.createPost()], controller.createPost)
+router.put("/updateById/:postId", [validator.Post.paramValidateId(), validator.Post.updatePost()], controller.updatePost)
+router.delete("/deleteById/:postId", [validator.Post.paramValidateId()], controller.deletePost)
 export default router

@@ -4,6 +4,16 @@ const getAllPosts = async () => {
     const posts = await Post.getAll()
     return posts
 }
+const getPostById = async (id) => {
+    const post = await Post.getById(id)
+    const json = (post == null) ? { data: "null", message: "No Data" } : post
+    return json
+}
+const getAllPostsOfUserByUserId = async (id) => {
+    const post = await Post.findWhere({ user_id: id })
+    const json = (post == null) ? { data: "null", message: "No Data" } : post
+    return json
+}
 const createPost = async (data) => {
     const json = { user_id: data.user_id, title: data.title, content_path: data.content_path, created_time: Date.now() }
     const post = await Post.create(json)
@@ -20,4 +30,4 @@ const deletePost = async (id) => {
 }
 
 
-export { getAllPosts, createPost, updatePost, deletePost }
+export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost }

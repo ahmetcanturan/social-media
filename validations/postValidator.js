@@ -26,6 +26,11 @@ const postValidator = {
                 .isLength({ min: 1, max: 15 }).withMessage("Title must include 1-15 characters"),
         ]
     },
+    justValidateId() {
+        return [
+            param('postId').isNumeric().withMessage("Invalid Id")
+        ]
+    },
     paramValidateId() {
         return [
             param('postId').isNumeric().withMessage("Invalid Id")

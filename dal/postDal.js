@@ -45,6 +45,17 @@ const DataAccess = {
             })
         })
     },
+    async findWhere(data) {
+        return new Promise((resolve, reject) => {
+            const query = `SELECT * FROM ${table} WHERE ${Object.keys(data)}=?`
+            db.query(query, [Object.values(data)], (err, result) => {
+                if (err) reject(err)
+                else {
+                    (result[0]?.Id) ? resolve(result) : resolve(null)
+                }
+            })
+        })
+    },
     async updateById(id, data) {
         return new Promise((resolve, reject) => {
             const query = `UPDATE ${table} SET ${forUpdate(data)} WHERE Id=${id}`

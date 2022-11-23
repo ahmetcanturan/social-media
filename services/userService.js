@@ -4,6 +4,11 @@ const getAllUsers = async () => {
     const users = await User.getAll()
     return users
 }
+const getUserById = async (id) => {
+    const user = await User.getById(id)
+    const json = (user == null) ? { data: "null", message: "No Data" } : user
+    return json
+}
 const createUser = async (data) => {
     const { username, password, email } = data
     const user = await User.create({ username, password, email })
@@ -20,4 +25,4 @@ const deleteUser = async (id) => {
 }
 
 
-export { getAllUsers, createUser, updateUser, deleteUser }
+export { getAllUsers, getUserById, createUser, updateUser, deleteUser }

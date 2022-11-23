@@ -9,6 +9,16 @@ const getAllUsers = async (req, res) => {
         res.status(500).redirect("/")
     }
 }
+const getUserById = async (req, res) => {
+    try {
+        if (validate(req, res) !== undefined) { return }
+        const json = await service.getUserById(req.params.userId)
+        res.status(201).send(json)
+    } catch (error) {
+        console.log(error)
+        res.status(500).redirect("/")
+    }
+}
 const createUser = async (req, res) => {
     try {
         if (validate(req, res) !== undefined) { return }
@@ -41,4 +51,4 @@ const deleteUser = async (req, res) => {
 }
 
 
-export { getAllUsers, createUser, updateUser, deleteUser }
+export { getAllUsers, getUserById, createUser, updateUser, deleteUser }
