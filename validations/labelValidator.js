@@ -23,6 +23,12 @@ const Validator = {
                     return true
                 })
         ]
+    },
+    nameValid() {
+        return [
+            query("name").isString().withMessage("You must write a  string name")
+                .isLength({ min: 1, max: 15 }).withMessage("Name must include 1-15 characters")
+        ]
     }
 }
 

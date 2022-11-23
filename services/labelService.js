@@ -9,16 +9,21 @@ const getLabelById = async (id) => {
     const json = (label == null) ? { data: "null", message: "No Data" } : label
     return json
 }
+const getLabelByName = async (name) => {
+    const label = await Label.findOne({ name: name.toLocaleLowerCase('TR') })
+    const json = (label == null) ? { data: "null", message: "No Data" } : label
+    return json
+}
 const createLabel = async (data) => {
     const json = { name: data.name.toLocaleLowerCase('TR') }
     const label = await Label.create(json)
     return label
 }
 
-// const deletePost = async (id) => {
-//     const post = await Post.deleteById(id)
-//     return post
-// }
+const deleteLabel = async (id) => {
+    const label = await Label.deleteById(id)
+    return label
+}
 
 
-export { getAllLabels, getLabelById, createLabel }
+export { getAllLabels, getLabelById, getLabelByName, createLabel, deleteLabel }
