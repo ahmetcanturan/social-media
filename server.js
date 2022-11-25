@@ -3,6 +3,7 @@ import dbConnect from "./db/connect.js"
 import dotenv from "dotenv"
 import CreateTable from "./db/table_create.js"
 import * as Routers from "./routers/index.js"
+import logger from "./middlewares/loggerMiddeware.js"
 dotenv.config()
 
 
@@ -10,6 +11,9 @@ const app = express()
 const router = express.Router()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+//* Logger-Middleware
+app.use(logger)
 
 //*Routers----------
 app.use("/user", Routers.User)
