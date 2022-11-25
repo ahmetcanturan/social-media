@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use("/user", Routers.User)
 app.use("/post", Routers.Post)
 app.use("/label", Routers.Label)
+app.use("/mention", Routers.Mention)
 
 app.listen(process.env.PORT, () => {
     console.log(`${process.env.PORT}. Port is Activated..`)
