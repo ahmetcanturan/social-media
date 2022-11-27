@@ -1,0 +1,219 @@
+,
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 0,
+            "mention_id": 2,
+            "username": "iremsak55",
+            "content": "Yorum Deneme"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:14:51"
+},
+{
+    "Error": {
+        "code": "ER_NO_REFERENCED_ROW_2",
+        "errno": 1452,
+        "sqlState": "23000",
+        "sqlMessage": "Cannot add or update a child row: a foreign key constraint fails (`social_app`.`comment`, CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`Id`) ON DELETE CASCADE)",
+        "sql": "INSERT INTO comment (post_id,mention_id,username,content,created_time) VALUES (0, 2, 'iremsak55', 'Yorum Deneme', 1669587451505)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 0,
+            "mention_id": 2,
+            "username": "iremsak55",
+            "content": "Yorum Deneme"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:17:25"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/getAllCommentsOfMentionByMentionId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {
+            "mentionId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:33:13"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/deleteById/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "commentId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:45:20"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "Delete FROM comment WHERE Id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/deleteById/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "commentId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:46:09"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "Delete FROM comment WHERE Id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/deleteById/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "commentId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:46:09"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'post_id' in 'field list'",
+        "sql": "INSERT INTO commentmention (post_id,mention_id,username,content,created_time) VALUES (NULL, 2, 'iremsak55', 'Çok güzel bir yazı', 1669589467040)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 2,
+            "username": "iremsak55",
+            "content": "Çok güzel bir yazı"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:50:53"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'post_id' in 'field list'",
+        "sql": "INSERT INTO commentmention (post_id,mention_id,username,content,created_time) VALUES (NULL, 2, 'iremsak55', 'Çok güzel bir yazı', 1669589591680)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 2,
+            "username": "iremsak55",
+            "content": "Çok güzel bir yazı"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:52:50"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'post_id' in 'field list'",
+        "sql": "INSERT INTO commentmention (post_id,mention_id,username,content,created_time) VALUES (NULL, 2, 'iremsak55', 'Çok güzel bir yazı', 1669589696430)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 2,
+            "username": "iremsak55",
+            "content": "Çok güzel bir yazı"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 01:53:55"
+},
+{
+    "Error": {
+        "code": "ER_BAD_NULL_ERROR",
+        "errno": 1048,
+        "sqlState": "23000",
+        "sqlMessage": "Column 'mention_id' cannot be null",
+        "sql": "INSERT INTO commentmention (mention_id,username,content,created_time) VALUES (NULL, 'iremsak55', 'Çok güzel bir yazı', 1669590482643)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 2,
+            "username": "iremsak55",
+            "content": "Çok güzel bir yazı"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 02:07:42"
+},
+{
+    "Error": {
+        "code": "ER_BAD_NULL_ERROR",
+        "errno": 1048,
+        "sqlState": "23000",
+        "sqlMessage": "Column 'mention_id' cannot be null",
+        "sql": "INSERT INTO commentmention (mention_id,username,content,created_time) VALUES (NULL, 'iremsak55', 'Nice Photo', 1669590597241)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/comment/mention/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 2,
+            "username": "iremsak55",
+            "content": "Nice Photo"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "28.11.2022 - 02:07:42"
+}
