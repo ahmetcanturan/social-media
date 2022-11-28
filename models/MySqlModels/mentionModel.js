@@ -1,10 +1,9 @@
-import db from "../db/connect.js"
-export const PostTable = () => {
-    db.query(`CREATE TABLE post 
+import db from "../../db/MySqlConnect.js"
+export const MentionTable = () => {
+    db.query(`CREATE TABLE mention 
         (Id INT AUTO_INCREMENT PRIMARY KEY,
-            user_id INT NOT NULL,
-        title VARCHAR(100),
-        content_path VARCHAR(100) DEFAULT "default",
+        user_id INT NOT NULL,
+        content VARCHAR(1250),
         created_time INT NOT NULL,
         FOREIGN KEY (user_id) REFERENCES user(Id) ON DELETE CASCADE
         )
@@ -17,4 +16,4 @@ export const PostTable = () => {
         }
     })
 }
-export default PostTable
+export default MentionTable

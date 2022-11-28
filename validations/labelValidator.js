@@ -1,5 +1,6 @@
 import { body, query, param } from 'express-validator'
-import Label from '../dal/labelDal.js'
+import Database from "../dal/DependencyInversion.js"
+const database = new Database("label")
 const Validator = {
     createLabel() {
         return [
@@ -8,7 +9,7 @@ const Validator = {
                 .isLength({ min: 1, max: 15 }).withMessage("Name must include 1-15 characters")
                 .custom(async (value, { req }) => {
                     let lower = value.toLocaleLowerCase('TR')
-                    const result = await Label.findOne({ name: lower })
+                    const result = await database.db().findOne({ name: lower })
                     if (result) throw new Error("Already exist")
                     return true
                 }),
@@ -18,7 +19,7 @@ const Validator = {
         return [
             param('labelId').isNumeric().withMessage("Invalid Id")
                 .custom(async (value, { req }) => {
-                    const result = await Label.getById(value)
+                    const result = await database.db().getById(value)
                     if (!result) throw new Error("Invalid Id")
                     return true
                 })

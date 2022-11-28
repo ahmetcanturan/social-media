@@ -1,4 +1,4 @@
-import db from "../db/connect.js"
+import db from "../../db/MySqlConnect.js"
 export const SharedLabelTable = () => {
     db.query(`CREATE TABLE sharedLabel 
         (Id INT AUTO_INCREMENT PRIMARY KEY,

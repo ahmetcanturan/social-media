@@ -1,11 +1,9 @@
-import db from "../db/connect.js"
-export const UserTable = () => {
-    db.query(`CREATE TABLE user 
+import db from "../../db/MySqlConnect.js"
+export const LabelTable = () => {
+    db.query(`CREATE TABLE label 
         (Id INT AUTO_INCREMENT PRIMARY KEY,
-        username VARCHAR(35),
-        password NVARCHAR(35),
-        email VARCHAR(50),
-        UNIQUE (username,email)
+        name VARCHAR(50) NOT NULL,
+        UNIQUE (name)
         )
         `, (err, result) => {
         if (!err) {
@@ -16,4 +14,4 @@ export const UserTable = () => {
         }
     })
 }
-export default UserTable
+export default LabelTable

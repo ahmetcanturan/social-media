@@ -1,12 +1,12 @@
-import db from "../db/connect.js"
-export const CommentPostTable = () => {
-    db.query(`CREATE TABLE commentpost 
+import db from "../../db/MySqlConnect.js"
+export const CommentMentionTable = () => {
+    db.query(`CREATE TABLE commentmention 
         (Id INT AUTO_INCREMENT PRIMARY KEY,
-        post_id INT NOT NULL,
+        mention_id INT NOT NULL,
         username VARCHAR(35) NOT NULL,
         content VARCHAR(100) NOT NULL,
         created_time INT NOT NULL ,
-        FOREIGN KEY (post_id) REFERENCES post(Id) ON DELETE CASCADE,
+        FOREIGN KEY (mention_id) REFERENCES mention(Id) ON DELETE CASCADE,
         FOREIGN KEY (username) REFERENCES user(username) ON DELETE CASCADE
         )
         `, (err, result) => {
@@ -18,4 +18,4 @@ export const CommentPostTable = () => {
         }
     })
 }
-export default CommentPostTable
+export default CommentMentionTable

@@ -1,26 +1,28 @@
-import User from "../dal/userDal.js"
+import Database from "../dal/DependencyInversion.js"
+
+const database = new Database("user")
 
 const getAllUsers = async () => {
-    const users = await User.getAll()
+    const users = await database.db().getAll()
     return users
 }
 const getUserById = async (id) => {
-    const user = await User.getById(id)
+    const user = await database.db().getById(id)
     const json = (user == null) ? { data: "null", message: "No Data" } : user
     return json
 }
 const createUser = async (data) => {
     const { username, password, email } = data
-    const user = await User.create({ username, password, email })
+    const user = await database.db().create({ username, password, email })
     return user
 }
 const updateUser = async (id, data) => {
     const { username, email } = data
-    const user = await User.updateById(id, { username, email })
+    const user = await database.db().updateById(id, { username, email })
     return user
 }
 const deleteUser = async (id) => {
-    const user = await User.deleteById(id)
+    const user = await database.db().deleteById(id)
     return user
 }
 
