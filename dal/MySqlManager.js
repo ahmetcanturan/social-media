@@ -60,6 +60,17 @@ class DbManager {
             })
         })
     }
+    async findMultipleCondition(condition) {
+        return new Promise((resolve, reject) => {
+            const query = `SELECT * FROM ${this.table} WHERE ${condition}`
+            db.query(query, (err, result) => {
+                if (err) reject(err)
+                else {
+                    (result[0]?.Id) ? resolve(result) : resolve(null)
+                }
+            })
+        })
+    }
     async updateById(id, data) {
         return new Promise((resolve, reject) => {
             const query = `UPDATE ${this.table} SET ${forUpdate(data)} WHERE Id=${id}`
@@ -75,6 +86,17 @@ class DbManager {
             db.query(query, (err, result) => {
                 if (err) reject(err)
                 else resolve(result)
+            })
+        })
+    }
+    async deleteMultipleCondition(condition) {
+        return new Promise((resolve, reject) => {
+            const query = `Delete * FROM ${this.table} WHERE ${condition}`
+            db.query(query, (err, result) => {
+                if (err) reject(err)
+                else {
+                    (result[0]?.Id) ? resolve(result) : resolve(null)
+                }
             })
         })
     }

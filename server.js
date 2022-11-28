@@ -23,6 +23,7 @@ app.use("/label", Routers.Label)
 app.use("/mention", Routers.Mention)
 app.use("/comment/mention", Routers.CommentMention)
 app.use("/comment/post", Routers.CommentPost)
+app.use("/message", Routers.Message)
 
 app.listen(process.env.PORT, () => {
     console.log(`${process.env.PORT}. Port is Activated..`)
@@ -37,4 +38,3 @@ app.listen(process.env.PORT, () => {
         }
     })
 })
-

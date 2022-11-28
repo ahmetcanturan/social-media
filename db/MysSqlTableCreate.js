@@ -5,6 +5,7 @@ import MentionTable from "../models/MySqlModels/mentionModel.js";
 import SharedLabelTable from "../models/MySqlModels/sharedLabelModel.js";
 import CommentMentionTable from "../models/MySqlModels/commentMentionModel.js";
 import CommentPostTable from "../models/MySqlModels/commentPostModel.js"
+import MessageTable from "../models/MySqlModels/messageModel.js";
 const start = () => {
     try {
         UserTable()
@@ -14,6 +15,7 @@ const start = () => {
         SharedLabelTable()
         CommentMentionTable()
         CommentPostTable()
+        MessageTable()
     } catch (error) {
         console.log(error)
     }

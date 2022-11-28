@@ -1843,4 +1843,1094 @@
         "Query": {}
     },
     "Time": "29.11.2022 - 00:08:54"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:39:38"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9",
+            "content": "How is it going?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:50:10"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:50:10"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9",
+            "content": "sil"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:50:10"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8",
+            "content": "I'm fine ,you?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:50:10"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:50:10"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:53:55"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/9",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:53:55"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/9",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:54:53"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:54:53"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/7",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/9",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/9",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesByReceiverId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:58:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/2",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/3",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 00:59:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:00:43"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:00:43"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/2",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:00:43"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessageById/3",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:00:43"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:03:05"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:03:05"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:04:25"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:04:25"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:08:51"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:17:40"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:17:40"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:32:04"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:32:04"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:32:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:34:00"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:34:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:34:59"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:36:26"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:36:26"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:36:26"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:36:26"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:37:48"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:05"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:05"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:05"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "2",
+            "receiver_id": "1"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:42:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:45:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:45:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8",
+            "content": "okey?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:45:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:45:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8",
+            "content": "hi?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8",
+            "content": "hi what happen?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9",
+            "content": "hi what happen?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8",
+            "content": "Can we talk together?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "8",
+            "receiver_id": "9",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 01:52:36"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:00:04"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:03:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:04:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:04:38"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:05:51"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:06:15"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:07:00"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:08:49"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:09:39"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:11:18"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:11:39"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:12:08"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteById/5",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:13:27"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteById/5",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:15:16"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteById/5",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:15:16"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteById/5",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:15:16"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteById/8",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:15:16"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getMessagesOfAChat",
+        "Method": "GET",
+        "Body": {
+            "sender_id": "9",
+            "receiver_id": "8"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:15:16"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteAChat",
+        "Method": "DELETE",
+        "Body": {
+            "sender_id": 9,
+            "receiver_id": 8
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:29:14"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:29:14"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteAChat",
+        "Method": "DELETE",
+        "Body": {
+            "sender_id": 9,
+            "receiver_id": 8
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 02:31:35"
 }
