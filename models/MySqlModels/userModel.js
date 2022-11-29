@@ -4,6 +4,7 @@ export const UserTable = () => {
         (Id INT AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(35),
         password NVARCHAR(35),
+        created_time bigint NOT NULL,
         email VARCHAR(50),
         UNIQUE (username,email)
         )

@@ -5,7 +5,7 @@ export const CommentPostTable = () => {
         post_id INT NOT NULL,
         username VARCHAR(35) NOT NULL,
         content VARCHAR(100) NOT NULL,
-        created_time INT NOT NULL ,
+        created_time bigint NOT NULL ,
         FOREIGN KEY (post_id) REFERENCES post(Id) ON DELETE CASCADE,
         FOREIGN KEY (username) REFERENCES user(username) ON DELETE CASCADE
         )

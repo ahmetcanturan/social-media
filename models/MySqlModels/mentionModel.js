@@ -4,7 +4,7 @@ export const MentionTable = () => {
         (Id INT AUTO_INCREMENT PRIMARY KEY,
         user_id INT NOT NULL,
         content VARCHAR(1250),
-        created_time INT NOT NULL,
+        created_time bigint NOT NULL,
         FOREIGN KEY (user_id) REFERENCES user(Id) ON DELETE CASCADE
         )
         `, (err, result) => {

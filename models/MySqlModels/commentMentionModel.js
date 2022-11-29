@@ -5,7 +5,7 @@ export const CommentMentionTable = () => {
         mention_id INT NOT NULL,
         username VARCHAR(35) NOT NULL,
         content VARCHAR(100) NOT NULL,
-        created_time INT NOT NULL ,
+        created_time bigint NOT NULL ,
         FOREIGN KEY (mention_id) REFERENCES mention(Id) ON DELETE CASCADE,
         FOREIGN KEY (username) REFERENCES user(username) ON DELETE CASCADE
         )
