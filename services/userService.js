@@ -1,5 +1,5 @@
 import Database from "../dal/DependencyInversion.js"
-
+import { hashToPassword } from "../utils/index.js"
 const database = new Database("user")
 
 const getAllUsers = async () => {
@@ -13,7 +13,7 @@ const getUserById = async (id) => {
 }
 const createUser = async (data) => {
     const { username, password, email } = data
-    const user = await database.db().create({ username, password, email })
+    const user = await database.db().create({ username, password: hashToPassword(password), email, created_time: Date.now() })
     return user
 }
 const updateUser = async (id, data) => {

@@ -1,5 +1,5 @@
 import { validationResult } from "express-validator"
-
+import md5 from "md5"
 
 const forUpdate = (keys) => {
     const list = []
@@ -8,10 +8,6 @@ const forUpdate = (keys) => {
     }
     return list
 }
-
-
-
-
 const validate = (req, res) => {
     try {
         const validationErrors = validationResult(req)
@@ -26,5 +22,8 @@ const validate = (req, res) => {
     }
 
 }
+const hashToPassword = (password) => {
+    return md5(password)
+}
 
-export { forUpdate, validate }
+export { forUpdate, validate, hashToPassword }
