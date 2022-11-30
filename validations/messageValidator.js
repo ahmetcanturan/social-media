@@ -2,7 +2,7 @@ import { body, query, param } from 'express-validator'
 import Database from "../dal/DependencyInversion.js"
 
 const User = new Database("user")
-const Message = new Database("message")
+
 
 const Validator = {
     create() {

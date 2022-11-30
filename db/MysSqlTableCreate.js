@@ -5,6 +5,7 @@ import MentionTable from "../models/MySqlModels/mentionModel.js";
 import SharedLabelTable from "../models/MySqlModels/sharedLabelModel.js";
 import CommentMentionTable from "../models/MySqlModels/commentMentionModel.js";
 import CommentPostTable from "../models/MySqlModels/commentPostModel.js"
+import ChatTable from "../models/MySqlModels/chatModel.js";
 import MessageTable from "../models/MySqlModels/messageModel.js";
 const start = () => {
     try {
@@ -15,6 +16,7 @@ const start = () => {
         SharedLabelTable()
         CommentMentionTable()
         CommentPostTable()
+        ChatTable()
         MessageTable()
     } catch (error) {
         console.log(error)

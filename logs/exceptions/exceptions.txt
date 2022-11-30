@@ -342,4 +342,204 @@
         "Query": {}
     },
     "Time": "29.11.2022 - 02:29:14"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM chat WHERE user1_id=undefined AND user2_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:21:34"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM chat WHERE user1_id=undefined AND user2_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:24:20"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM chat WHERE user1_id=undefined AND user2_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:26:14"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM chat WHERE user1_id=undefined AND user2_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:27:11"
+},
+{
+    "Error": {
+        "code": "ER_BAD_NULL_ERROR",
+        "errno": 1048,
+        "sqlState": "23000",
+        "sqlMessage": "Column 'user1_id' cannot be null",
+        "sql": "INSERT INTO chat (user1_id,user2_id) VALUES (NULL, NULL)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:35:29"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:51:06"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:52:18"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "No sorry"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:52:46"
+},
+{
+    "Error": {
+        "code": "ER_BAD_NULL_ERROR",
+        "errno": 1048,
+        "sqlState": "23000",
+        "sqlMessage": "Column 'chat_id' cannot be null",
+        "sql": "INSERT INTO message (sender_id,receiver_id,chat_id,content,created_time) VALUES ('2', '1', NULL, 'dd?', 1669748160118)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "2",
+            "receiver_id": "1",
+            "content": "dd?"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "29.11.2022 - 21:53:36"
+},
+{
+    "Error": {
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlState": "42000",
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object Object]' at line 1",
+        "sql": "Delete FROM chat WHERE Id=[object Object]"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/deleteAChatByChatId/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "chatId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "30.11.2022 - 23:50:57"
 }

@@ -4,11 +4,13 @@ export const MessageTable = () => {
         (Id INT AUTO_INCREMENT PRIMARY KEY,
         sender_id INT NOT NULL,
         receiver_id INT NOT NULL,
+        chat_id INT NOT NULL,
         content VARCHAR(1250),
         is_seen BOOLEAN DEFAULT FALSE,
         created_time bigint NOT NULL,
         FOREIGN KEY (receiver_id) REFERENCES user(Id) ON DELETE CASCADE,
-        FOREIGN KEY (sender_id) REFERENCES user(Id) ON DELETE CASCADE
+        FOREIGN KEY (sender_id) REFERENCES user(Id) ON DELETE CASCADE,
+        FOREIGN KEY (chat_id) REFERENCES chat(Id) ON DELETE CASCADE
         )
         `, (err, result) => {
         if (!err) {
