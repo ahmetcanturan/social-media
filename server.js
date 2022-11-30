@@ -25,6 +25,7 @@ app.use("/comment/mention", Routers.CommentMention)
 app.use("/comment/post", Routers.CommentPost)
 app.use("/message", Routers.Message)
 app.use("/postLabel", Routers.PostLabel)
+app.use("/mentionLabel", Routers.MentionLabel)
 
 app.listen(process.env.PORT, () => {
     console.log(`${process.env.PORT}. Port is Activated..`)

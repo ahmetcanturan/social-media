@@ -35,6 +35,16 @@ const Validator = {
                 })
         ]
     },
+    bodyValidateId() {
+        return [
+            body('mention_id').isNumeric().withMessage("Invalid Id")
+                .custom(async (value, { req }) => {
+                    const result = await Mention.db().getById(value)
+                    if (!result) throw new Error("Invalid Id")
+                    return true
+                })
+        ]
+    },
     userIdValid() {
         return [
             param('userId').isNumeric().withMessage("Invalid Id")
