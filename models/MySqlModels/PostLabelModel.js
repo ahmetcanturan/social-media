@@ -1,12 +1,10 @@
 import db from "../../db/MySqlConnect.js"
-export const SharedLabelTable = () => {
-    db.query(`CREATE TABLE sharedLabel 
+export const PostLabelTable = () => {
+    db.query(`CREATE TABLE postLabel 
         (Id INT AUTO_INCREMENT PRIMARY KEY,
-        post_id INT DEFAULT 0,
-        mention_id INT DEFAULT 0,
+        post_id INT  NOT NULL,
         label_id INT NOT NULL,
         FOREIGN KEY (post_id) REFERENCES post(Id) ON DELETE CASCADE,
-        FOREIGN KEY (mention_id) REFERENCES mention(Id) ON DELETE CASCADE,
         FOREIGN KEY (label_id) REFERENCES label(Id) ON DELETE CASCADE
         )
         `, (err, result) => {
@@ -18,4 +16,4 @@ export const SharedLabelTable = () => {
         }
     })
 }
-export default SharedLabelTable
+export default PostLabelTable
