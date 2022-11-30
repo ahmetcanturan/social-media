@@ -542,4 +542,99 @@
         "Query": {}
     },
     "Time": "30.11.2022 - 23:50:57"
+},
+{
+    "Error": {
+        "code": "ER_NO_REFERENCED_ROW_2",
+        "errno": 1452,
+        "sqlState": "23000",
+        "sqlMessage": "Cannot add or update a child row: a foreign key constraint fails (`social_app`.`postlabel`, CONSTRAINT `postlabel_ibfk_2` FOREIGN KEY (`label_id`) REFERENCES `label` (`Id`) ON DELETE CASCADE)",
+        "sql": "INSERT INTO postLabel (post_id,label_id) VALUES (1, 100)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 100
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "Delete FROM postLabel WHERE Id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "postId": "3"
+        },
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:14:19"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "Delete FROM postLabel WHERE Id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "postId": "3"
+        },
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:15:38"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "Delete FROM postLabel WHERE Id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "postId": "3"
+        },
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:17:31"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {
+            "postId": "3"
+        },
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:24:29"
 }

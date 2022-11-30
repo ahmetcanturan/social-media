@@ -25,6 +25,16 @@ const Validator = {
                 })
         ]
     },
+    bodyValidateId() {
+        return [
+            body('label_id').isNumeric().withMessage("Invalid Id")
+                .custom(async (value, { req }) => {
+                    const result = await database.db().getById(value)
+                    if (!result) throw new Error("Invalid Id")
+                    return true
+                })
+        ]
+    },
     nameValid() {
         return [
             query("name").isString().withMessage("You must write a  string name")

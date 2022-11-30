@@ -43,7 +43,19 @@ const postValidator = {
                 })
 
         ]
+    },
+    bodyValidateId() {
+        return [
+            body('post_id').isNumeric().withMessage("Invalid Id")
+                .custom(async (value, { req }) => {
+                    const result = await Post.db().getById(value)
+                    if (!result) throw new Error("Invalid Id")
+                    return true
+                })
+
+        ]
     }
+
 
 
 }

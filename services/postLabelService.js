@@ -31,13 +31,27 @@ const deleteAPostLabelById = async (id) => {
 }
 const deletePostLabelsByPostId = async (id) => {
     const postLabel = await database.db().findWhere({ post_id: id })
-    const deleted = await database.db().deleteById(postLabel?.Id)
-    return (deleted.affectedRows > 0) ? deleted : { status: false, postLabel: "Can not find postLabel " }
+    if (postLabel == null) {
+        return { status: false, postLabel: "Can not find postLabel " }
+    }
+    else {
+        for (const iterator of postLabel) {
+            await database.db().deleteById(iterator.Id)
+        }
+        return { status: true, message: "Succeed Deleted" }
+    }
 }
 const deletePostLabelsByLabelId = async (id) => {
     const postLabel = await database.db().findWhere({ label_id: id })
-    const deleted = await database.db().deleteById(postLabel?.Id)
-    return (deleted.affectedRows > 0) ? deleted : { status: false, postLabel: "Can not find postLabel " }
+    if (postLabel == null) {
+        return { status: false, postLabel: "Can not find postLabel " }
+    }
+    else {
+        for (const iterator of postLabel) {
+            await database.db().deleteById(iterator.Id)
+        }
+        return { status: true, message: "Succeed Deleted" }
+    }
 }
 
 export {

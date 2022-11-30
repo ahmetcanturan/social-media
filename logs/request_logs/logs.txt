@@ -4345,4 +4345,699 @@
         "Query": {}
     },
     "Time": "30.11.2022 - 23:52:12"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 00:53:14"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelById/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 00:54:44"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 2
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 100
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:02:01"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:04:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 100
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:04:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 14,
+            "label_id": 100
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:04:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:04:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:04:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByPostId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:06:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByPostId/2",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:06:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByPostId/10",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:06:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByLabelId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:07:33"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByLabelId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:08:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByLabelId/2",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:08:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getPostLabelsByLabelId/4",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:08:28"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/10",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:09:32"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/10",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:09:32"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/10",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/10",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/4",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/4",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deleteAPostLabelById/2",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:10:57"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:14:19"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:14:19"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:15:38"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:15:38"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:17:31"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:17:31"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/10",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:18:21"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/10",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:19:53"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/10",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:24:29"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:24:29"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:24:29"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:25:08"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:25:08"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:25:08"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/3",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:29:34"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/2",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:29:34"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:29:34"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByPostId/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:29:58"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:29:58"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByLabelId/10",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByLabelId/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "label_id": 2
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByLabelId/5",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByLabelId/1",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/deletePostLabelsByLabelId/2",
+        "Method": "DELETE",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/postLabel/getAllPostLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "01.12.2022 - 01:31:30"
 }
