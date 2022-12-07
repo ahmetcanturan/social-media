@@ -9,7 +9,6 @@ dotenv.config()
 
 
 const app = express()
-const router = express.Router()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
@@ -27,6 +26,11 @@ app.use("/message", Routers.Message)
 app.use("/postLabel", Routers.PostLabel)
 app.use("/mentionLabel", Routers.MentionLabel)
 
+
+
+app.use((req, res) => {
+    res.json({ status: false, message: "invalid request" }).status(404)
+})
 app.listen(process.env.PORT, () => {
     console.log(`${process.env.PORT}. Port is Activated..`)
     MySqlConnect.connect((err) => {

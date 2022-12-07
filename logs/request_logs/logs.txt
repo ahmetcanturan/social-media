@@ -5457,4 +5457,136 @@
         "Query": {}
     },
     "Time": "01.12.2022 - 02:41:47"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:24:42"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:24:42"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:31:22"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:33:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/favicon.ico",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:33:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user/getAllUsers",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:33:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/favicon.ico",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:33:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user/getAllUsers",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:34:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/favicon.ico",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:34:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user/getAllUsers",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:34:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:34:06"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "07.12.2022 - 14:34:22"
 }
