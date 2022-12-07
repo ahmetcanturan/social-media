@@ -25,7 +25,7 @@ class DbManager {
             const query = `SELECT * FROM ${this.table}`
             db.query(query, (err, result) => {
                 if (err) reject(err)
-                else resolve(result)
+                else (result[0]?.Id) ? resolve(result) : resolve(null)
             })
         })
     }
