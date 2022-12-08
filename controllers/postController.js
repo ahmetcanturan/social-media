@@ -1,6 +1,8 @@
 import * as service from "../services/postService.js"
+import imageUpload from "../services/fileUploadService.js"
 import { validate } from "../utils/index.js"
 import { exception } from "../logger/index.js"
+import { getHost } from "../utils/index.js"
 const getAllPosts = async (req, res) => {
     try {
         const json = await service.getAllPosts()
@@ -61,4 +63,20 @@ const deletePost = async (req, res) => {
     }
 }
 
-export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost }
+const imageUploadByPostId = async (req, res) => {
+    try {
+        if (validate(req, res) !== undefined) { return }
+        imageUpload(req, res, async (err) => {
+            if (err) return res.json({ succeed: false, error: err }).status(400)
+            if (req?.file?.filename == undefined) return res.json({ error: "You didn't pick a photo", succeed: false })
+            const path = await getHost(req.file.path)
+            await service.updateContentPath(req.params.postId, { content_path: req.file.path })
+            res.json({ succeed: true, path: path })
+        })
+    } catch (error) {
+        exception(error, req)
+        res.status(500).redirect("/")
+    }
+}
+
+export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost, imageUploadByPostId }

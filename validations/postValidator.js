@@ -16,9 +16,6 @@ const postValidator = {
             body('title')
                 .notEmpty({ ignore_whitespace: true }).withMessage("You must write a title")
                 .isLength({ min: 1, max: 45 }).withMessage("Title must include 1-45 characters"),
-            body('content_path')
-                .notEmpty({ ignore_whitespace: true }).withMessage("You must write a content_path")
-                .isLength({ min: 3, max: 100 }).withMessage("Content_path must include 3-100 characters"),
         ]
     },
     updatePost() {

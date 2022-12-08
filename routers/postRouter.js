@@ -9,4 +9,5 @@ router.get("/getAllPostsOfUserByUserId/:userId", [validator.User.paramValidateId
 router.post("/create", [validator.Post.createPost()], controller.createPost)
 router.put("/updateById/:postId", [validator.Post.paramValidateId(), validator.Post.updatePost()], controller.updatePost)
 router.delete("/deleteById/:postId", [validator.Post.paramValidateId()], controller.deletePost)
+router.post("/imageUploadByPostId/:postId", [validator.Post.paramValidateId()], controller.imageUploadByPostId)
 export default router

@@ -7,10 +7,10 @@ import logger from "./middlewares/loggerMiddeware.js"
 import { exception } from "./logger/index.js"
 dotenv.config()
 
-
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use("/uploads", express.static("uploads"))
 
 //* Logger-Middleware
 app.use(logger)

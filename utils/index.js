@@ -1,6 +1,7 @@
 import { validationResult } from "express-validator"
 import md5 from "md5"
-
+import dns from "dns"
+import os from "os"
 const forUpdate = (keys) => {
     const list = []
     for (const key of Object.keys(keys)) {
@@ -26,4 +27,12 @@ const hashToPassword = (password) => {
     return md5(password)
 }
 
-export { forUpdate, validate, hashToPassword }
+const getHost = (path) => {
+    return new Promise((resolve) => {
+        dns.lookup(os.hostname(), (err, ip) => {
+            resolve(`http://${ip}:${process.env.PORT}/${path}`)
+        })
+    })
+}
+
+export { forUpdate, validate, hashToPassword, getHost }

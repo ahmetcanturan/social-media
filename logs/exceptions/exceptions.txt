@@ -637,4 +637,60 @@
         "Query": {}
     },
     "Time": "01.12.2022 - 01:24:29"
+},
+{
+    "Error": {
+        "code": "ERR_INVALID_ARG_TYPE"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/post/fileUpload",
+        "Method": "POST",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "08.12.2022 - 14:34:44"
+},
+{
+    "Error": {
+        "code": "ERR_INVALID_ARG_TYPE"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/post/fileUpload",
+        "Method": "POST",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "08.12.2022 - 14:34:44"
+},
+{
+    "Error": {
+        "code": "ERR_INVALID_ARG_TYPE"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/post/fileUpload",
+        "Method": "POST",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "08.12.2022 - 14:34:44"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/post/imageUploadByPostId/1",
+        "Method": "POST",
+        "Body": {},
+        "Params": {
+            "postId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "08.12.2022 - 17:54:05"
 }

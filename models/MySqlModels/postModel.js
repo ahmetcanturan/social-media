@@ -4,7 +4,7 @@ export const PostTable = () => {
         (Id INT AUTO_INCREMENT PRIMARY KEY,
             user_id INT NOT NULL,
         title VARCHAR(100),
-        content_path VARCHAR(100) DEFAULT "default",
+        content_path VARCHAR(100) DEFAULT 'empty',
         created_time bigint NOT NULL,
         FOREIGN KEY (user_id) REFERENCES user(Id) ON DELETE CASCADE
         )

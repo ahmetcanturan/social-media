@@ -28,10 +28,15 @@ const updatePost = async (id, data) => {
     const post = await database.db().updateById(id, json)
     return post
 }
+const updateContentPath = async (id, data) => {
+    const json = { content_path: data.content_path }
+    const post = await database.db().updateById(id, json)
+    return post
+}
 const deletePost = async (id) => {
     const post = await database.db().deleteById(id)
     return post
 }
 
 
-export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost }
+export { getAllPosts, getPostById, getAllPostsOfUserByUserId, createPost, updatePost, deletePost, updateContentPath }
