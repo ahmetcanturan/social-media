@@ -2,6 +2,7 @@ import Database from "../dal/DependencyInversion.js"
 import { hashToPassword } from "../utils/index.js"
 const database = new Database("user")
 
+
 const getAllUsers = async () => {
     const users = await database.db().getAll()
     return users

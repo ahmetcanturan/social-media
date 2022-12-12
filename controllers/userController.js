@@ -1,6 +1,16 @@
 import * as service from "../services/userService.js"
 import { validate } from "../utils/index.js"
 import { exception } from "../logger/index.js"
+
+const login = async (req, res) => {
+    try {
+        const json = await service.getAllUsers()
+        res.status(201).send(json)
+    } catch (error) {
+        exception(error, req)
+        res.status(500).redirect("/")
+    }
+}
 const getAllUsers = async (req, res) => {
     try {
         const json = await service.getAllUsers()
