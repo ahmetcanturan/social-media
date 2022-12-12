@@ -1,8 +1,15 @@
 import Database from "../dal/DependencyInversion.js"
-import { hashToPassword } from "../utils/index.js"
+import { hashToPassword, createToken } from "../utils/index.js"
 const database = new Database("user")
 
-
+const login = async (data) => {
+    const { username, password } = data
+    const user = await database.db().findOne(username)
+    if (user == null) return { status: false, message: "Invalid username" }
+    if (user.password != hashToPassword(password)) return { status: false, message: "Invalid password" }
+    const token = createToken(user.id, user.username)
+    return token
+}
 const getAllUsers = async () => {
     const users = await database.db().getAll()
     return users
@@ -28,4 +35,4 @@ const deleteUser = async (id) => {
 }
 
 
-export { getAllUsers, getUserById, createUser, updateUser, deleteUser }
+export { login, getAllUsers, getUserById, createUser, updateUser, deleteUser }

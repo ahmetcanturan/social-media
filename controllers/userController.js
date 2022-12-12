@@ -4,8 +4,10 @@ import { exception } from "../logger/index.js"
 
 const login = async (req, res) => {
     try {
-        const json = await service.getAllUsers()
-        res.status(201).send(json)
+        const json = await service.login(req.body)
+        if (json?.status == false) return res.status(400).json(json)
+        req.headers.authorization = token
+        res.status(201).json(json)
     } catch (error) {
         exception(error, req)
         res.status(500).redirect("/")
@@ -62,4 +64,4 @@ const deleteUser = async (req, res) => {
 }
 
 
-export { getAllUsers, getUserById, createUser, updateUser, deleteUser }
+export { login, getAllUsers, getUserById, createUser, updateUser, deleteUser }
