@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 import MySqlTableCreate from "./db/MysSqlTableCreate.js"
 import * as Routers from "./routers/index.js"
 import logger from "./middlewares/loggerMiddeware.js"
+import auth from "./middlewares/authMiddleware.js"
 import { exception } from "./logger/index.js"
 import cors from "cors"
 import helmet from "helmet"
@@ -18,7 +19,7 @@ app.use("/uploads", express.static("uploads"))
 
 //* Logger-Middleware
 app.use(logger)
-
+app.use(auth)
 //*Routers----------
 app.use("/user", Routers.User)
 app.use("/post", Routers.Post)
