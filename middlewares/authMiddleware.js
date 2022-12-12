@@ -1,5 +1,5 @@
-
 import { verifyToken } from "../utils/index.js"
+import { exception } from "../logger/index.js"
 
 export default (req, res, next) => {
     try {
@@ -21,7 +21,7 @@ export default (req, res, next) => {
         }
         next()
     } catch (error) {
-        console.log(error)
+        exception(error, req)
         return res.status(400).json({
             message: "Invalid AUTHORIZED"
         })

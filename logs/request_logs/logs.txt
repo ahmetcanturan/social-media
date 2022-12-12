@@ -8063,4 +8063,18 @@
         "Query": {}
     },
     "Time": "12.12.2022 - 17:46:33"
+},
+{
+    "Request": {
+        "Url": "/user/create",
+        "Method": "POST",
+        "Body": {
+            "username": "irem99",
+            "email": "irem99@gmail.com",
+            "password": "***"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "12.12.2022 - 17:49:51"
 }
