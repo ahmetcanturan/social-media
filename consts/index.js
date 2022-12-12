@@ -4,5 +4,7 @@ const accessible_endpoint = ["user/create", "user/login", "get"]
 const inaccessible_endpoint = ["message", "chat"]
 export {
     IMAGE_MIME_TYPES,
-    VIDEO_MIME_TYPES
+    VIDEO_MIME_TYPES,
+    accessible_endpoint,
+    inaccessible_endpoint
 }
