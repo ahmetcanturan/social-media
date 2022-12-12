@@ -693,4 +693,18 @@
         "Query": {}
     },
     "Time": "08.12.2022 - 17:54:05"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/follower/getIFollowedByfollowedId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {
+            "followedId": "1"
+        },
+        "Query": {}
+    },
+    "Time": "12.12.2022 - 16:03:41"
 }

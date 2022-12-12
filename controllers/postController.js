@@ -1,5 +1,4 @@
 import * as service from "../services/postService.js"
-import imageUpload from "../services/imageUploadService.js"
 import * as fileUpload from "../services/fileUploadService.js"
 import { validate } from "../utils/index.js"
 import { exception } from "../logger/index.js"

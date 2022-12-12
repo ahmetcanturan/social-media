@@ -1,4 +1,4 @@
-import express from "express"
+import express, { Router } from "express"
 import MySqlConnect from "./db/MySqlConnect.js"
 import dotenv from "dotenv"
 import MySqlTableCreate from "./db/MysSqlTableCreate.js"
@@ -25,7 +25,7 @@ app.use("/comment/post", Routers.CommentPost)
 app.use("/message", Routers.Message)
 app.use("/postLabel", Routers.PostLabel)
 app.use("/mentionLabel", Routers.MentionLabel)
-
+app.use("/follower", Routers.Follower)
 
 
 app.use((req, res) => {

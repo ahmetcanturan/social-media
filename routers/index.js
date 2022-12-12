@@ -7,4 +7,5 @@ import CommentPost from "./commentPostRouter.js"
 import Message from "./messageRouter.js"
 import PostLabel from "./postLabelRouter.js"
 import MentionLabel from "./mentionLabelRouter.js"
-export { User, Post, Label, Mention, CommentMention, CommentPost, Message, PostLabel, MentionLabel }
+import Follower from "./followerRouter.js"
+export { User, Post, Label, Mention, CommentMention, CommentPost, Message, PostLabel, MentionLabel, Follower }
