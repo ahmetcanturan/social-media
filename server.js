@@ -1,7 +1,7 @@
 import express, { Router } from "express"
 import MySqlConnect from "./db/MySqlConnect.js"
 import dotenv from "dotenv"
-import MySqlTableCreate from "./db/MysSqlTableCreate.js"
+import MySqlTableCreate from "./db/MySqlTableCreate.js"
 import * as Routers from "./routers/index.js"
 import logger from "./middlewares/loggerMiddeware.js"
 import auth from "./middlewares/authMiddleware.js"
@@ -19,7 +19,7 @@ app.use("/uploads", express.static("uploads"))
 
 //* Logger-Middleware
 app.use(logger)
-app.use(auth)
+// app.use(auth)
 //*Routers----------
 app.use("/user", Routers.User)
 app.use("/post", Routers.Post)
@@ -31,7 +31,8 @@ app.use("/message", Routers.Message)
 app.use("/postLabel", Routers.PostLabel)
 app.use("/mentionLabel", Routers.MentionLabel)
 app.use("/follower", Routers.Follower)
-
+app.use("/likepost", Routers.LikePost)
+app.use("/likemention", Routers.LikeMention)
 
 app.use((req, res) => {
     res.json({ status: false, message: "invalid request" }).status(404)

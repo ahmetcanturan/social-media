@@ -9,6 +9,8 @@ import CommentPostTable from "../models/MySqlModels/commentPostModel.js"
 import ChatTable from "../models/MySqlModels/chatModel.js";
 import MessageTable from "../models/MySqlModels/messageModel.js";
 import FollowerTable from "../models/MySqlModels/follower.js";
+import likePostTable from "../models/MySqlModels/likePostModel.js"
+import likeMentionTable from "../models/MySqlModels/likeMentionModel.js"
 const start = () => {
     try {
         UserTable()
@@ -22,6 +24,8 @@ const start = () => {
         ChatTable()
         MessageTable()
         FollowerTable()
+        likePostTable()
+        likeMentionTable()
     } catch (error) {
         console.log(error)
     }

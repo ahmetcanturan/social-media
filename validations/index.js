@@ -5,4 +5,5 @@ import Mention from "./mentionValidator.js"
 import Comment from "./commentValidator.js"
 import Message from "./messageValidator.js"
 import Follower from "./FollowerValidator.js"
-export { User, Post, Label, Mention, Comment, Message, Follower }
+import Like from "./likeValidator.js"
+export { User, Post, Label, Mention, Comment, Message, Follower, Like }

@@ -749,4 +749,130 @@
         "Query": {}
     },
     "Time": "12.12.2022 - 17:26:28"
+},
+{
+    "Error": {
+        "code": "ER_NO_REFERENCED_ROW_2",
+        "errno": 1452,
+        "sqlState": "23000",
+        "sqlMessage": "Cannot add or update a child row: a foreign key constraint fails (`social_app`.`likepost`, CONSTRAINT `likepost_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`Id`) ON DELETE CASCADE)",
+        "sql": "INSERT INTO likepost (post_id,user_id,created_time) VALUES (122, '12', 1670884826712)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likepost/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 122,
+            "user_id": "12"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 01:40:06"
+},
+{
+    "Error": {
+        "code": "ER_NO_REFERENCED_ROW_2",
+        "errno": 1452,
+        "sqlState": "23000",
+        "sqlMessage": "Cannot add or update a child row: a foreign key constraint fails (`social_app`.`likepost`, CONSTRAINT `likepost_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`Id`) ON DELETE CASCADE)",
+        "sql": "INSERT INTO likepost (post_id,user_id,created_time) VALUES (122, '12', 1670884834616)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likepost/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 122,
+            "user_id": "12"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 01:40:06"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'followed_id' in 'where clause'",
+        "sql": "SELECT * FROM likepost WHERE user_id=2 AND followed_id=1"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likepost/create",
+        "Method": "POST",
+        "Body": {
+            "post_id": 1,
+            "user_id": 2
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 01:48:23"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM likepost WHERE user_id=1 AND post_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likemention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 1,
+            "user_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 02:17:25"
+},
+{
+    "Error": {
+        "code": "ER_BAD_FIELD_ERROR",
+        "errno": 1054,
+        "sqlState": "42S22",
+        "sqlMessage": "Unknown column 'undefined' in 'where clause'",
+        "sql": "SELECT * FROM likepost WHERE user_id=1 AND post_id=undefined"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likemention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 1,
+            "user_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 02:18:15"
+},
+{
+    "Error": {
+        "code": "ER_BAD_NULL_ERROR",
+        "errno": 1048,
+        "sqlState": "23000",
+        "sqlMessage": "Column 'post_id' cannot be null",
+        "sql": "INSERT INTO likepost (post_id,user_id,created_time) VALUES (NULL, 1, 1670887142145)"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/likemention/create",
+        "Method": "POST",
+        "Body": {
+            "mention_id": 1,
+            "user_id": 1
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 02:18:55"
 }
