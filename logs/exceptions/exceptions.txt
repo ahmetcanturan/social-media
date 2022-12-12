@@ -707,4 +707,46 @@
         "Query": {}
     },
     "Time": "12.12.2022 - 16:03:41"
+},
+{
+    "Error": {
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlState": "42000",
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=' at line 1",
+        "sql": "SELECT * FROM user WHERE ="
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user/login",
+        "Method": "POST",
+        "Body": {
+            "username": "",
+            "password": ""
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "12.12.2022 - 17:25:22"
+},
+{
+    "Error": {
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlState": "42000",
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,2,3,4,5,6,7,8='a', 'h', 'm', 't', 'c', 'n', 't', 'r', 'n'' at line 1",
+        "sql": "SELECT * FROM user WHERE 0,1,2,3,4,5,6,7,8='a', 'h', 'm', 't', 'c', 'n', 't', 'r', 'n'"
+    },
+    "Request": {
+        "Ip": "::1",
+        "Url": "/user/login",
+        "Method": "POST",
+        "Body": {
+            "username": "ahmtcntrn",
+            "password": "12345"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "12.12.2022 - 17:26:28"
 }

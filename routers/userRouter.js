@@ -4,7 +4,7 @@ import validator from "../validations/userValidator.js"
 
 const router = express.Router()
 
-router.post("/login", controller.getAllUsers)
+router.post("/login", [validator.loginValidate()], controller.login)
 router.get("/getAllUsers", controller.getAllUsers)
 router.get("/getUserById/:userId", [validator.paramValidateId()], controller.getUserById)
 router.post("/create", [validator.createUser()], controller.createUser)

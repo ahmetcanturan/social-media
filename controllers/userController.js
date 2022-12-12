@@ -4,9 +4,10 @@ import { exception } from "../logger/index.js"
 
 const login = async (req, res) => {
     try {
+        if (validate(req, res) !== undefined) { return }
         const json = await service.login(req.body)
         if (json?.status == false) return res.status(400).json(json)
-        res.status(201).json(json)
+        res.status(201).json({ status: true, token: json })
     } catch (error) {
         exception(error, req)
         res.status(500).redirect("/")

@@ -53,6 +53,15 @@ const userValidator = {
                 })
 
         ]
+    },
+    loginValidate() {
+        return [
+            body('username').notEmpty({ ignore_whitespace: true }).withMessage("You must write an username")
+                .isLength({ min: 3, max: 20 }).withMessage("Invalid username"),
+            body('password')
+                .notEmpty({ ignore_whitespace: true }).withMessage("You must write a password")
+                .isLength({ min: 5, max: 25 }).withMessage("Invalid password"),
+        ]
     }
 
 

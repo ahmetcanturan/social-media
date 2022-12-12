@@ -4,7 +4,7 @@ const database = new Database("user")
 
 const login = async (data) => {
     const { username, password } = data
-    const user = await database.db().findOne(username)
+    const user = await database.db().findOne({ username: username })
     if (user == null) return { status: false, message: "Invalid username" }
     if (user.password != hashToPassword(password)) return { status: false, message: "Invalid password" }
     const token = createToken(user.id, user.username)
