@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 })
 const mailOptions = (to) => {
     return {
-        from: "perrotal.andre@yandex.com.tr",
+        from: process.env.MAIL_USER,
         to: to,
         subject: `Kayıt işleminiz başarılı!`,
         html: `<h1>Merhaba Kayıt işleminiz tamamlanmıştır.</h1>`
