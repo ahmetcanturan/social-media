@@ -966,4 +966,15 @@
         "Query": {}
     },
     "Time": "13.12.2022 - 22:53:06"
+},
+{
+    "Error": {
+        "errno": -4078,
+        "code": "ECONNREFUSED",
+        "syscall": "connect",
+        "address": "127.0.0.1",
+        "port": 6379
+    },
+    "Request": {},
+    "Time": "13.12.2022 - 23:38:18"
 }

@@ -11206,4 +11206,18 @@
         "Query": {}
     },
     "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Method": "POST",
+        "Body": {
+            "username": "hello",
+            "email": "ahmtcntrn74@gmail.com",
+            "password": "***"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:40:37"
 }
