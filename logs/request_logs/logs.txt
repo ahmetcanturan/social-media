@@ -11107,4 +11107,103 @@
         "Query": {}
     },
     "Time": "13.12.2022 - 22:57:02"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Method": "POST",
+        "Body": {
+            "username": "hello",
+            "email": "ahmtcntrn74@gmail.com",
+            "password": "***"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 22:57:02"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/8",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "2",
+            "receiver_id": "1",
+            "content": "hello :)"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/create",
+        "Method": "POST",
+        "Body": {
+            "sender_id": "1",
+            "receiver_id": "2",
+            "content": "hi :)"
+        },
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessages",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/1",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/message/getAllMessagesBySenderId/2",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 23:07:45"
 }
