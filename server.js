@@ -8,7 +8,6 @@ import auth from "./middlewares/authMiddleware.js"
 import { exception } from "./logger/index.js"
 import cors from "cors"
 import helmet from "helmet"
-import { transporter, mailOptions } from "./services/mailService.js"
 dotenv.config()
 
 const app = express()
@@ -18,12 +17,6 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use("/uploads", express.static("uploads"))
 
-// transporter.sendMail(mailOptions, (error, info) => {
-//     if (error) {
-//         console.log(error)
-//     }
-//     // console.log('Message %s sent: %s', info.messageId, info.response)
-// })
 
 //* Logger-Middleware
 app.use(logger)

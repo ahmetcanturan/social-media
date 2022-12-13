@@ -875,4 +875,14 @@
         "Query": {}
     },
     "Time": "13.12.2022 - 02:18:55"
+},
+{
+    "Error": {
+        "errorno": "ETIMEDOUT",
+        "code": "ETIMEDOUT",
+        "syscall": "connect",
+        "fatal": true
+    },
+    "Request": {},
+    "Time": "13.12.2022 - 15:05:19"
 }

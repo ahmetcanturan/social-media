@@ -1,6 +1,7 @@
 import * as service from "../services/userService.js"
 import { validate } from "../utils/index.js"
 import { exception } from "../logger/index.js"
+import publisher from "../rabbitmq/publisher.js"
 
 const login = async (req, res) => {
     try {
@@ -36,6 +37,7 @@ const createUser = async (req, res) => {
     try {
         if (validate(req, res) !== undefined) { return }
         const json = await service.createUser(req.body)
+        await publisher({ data: req.body.email })
         res.status(201).send(json)
     } catch (error) {
         exception(error, req)

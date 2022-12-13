@@ -1,6 +1,4 @@
 import nodemailer from "nodemailer"
-import dotenv from "dotenv"
-dotenv.config()
 
 const transporter = nodemailer.createTransport({
     direct: true,
@@ -12,14 +10,13 @@ const transporter = nodemailer.createTransport({
     },
     secure: true
 })
-
-const mailOptions = {
-    // Ben domain'imi yandex'e bağladığım için cagatay.me olarak belirttim.
-    from: process.env.MAIL_USER,
-    to: 'ahmtcntrn@hotmail.com',
-    subject: `Burası başlık kısmı`,
-    text: `Buraya text girebilirsiniz..`,
-    html: `<h1>Buraya html girebilirsiniz.</h1>`
+const mailOptions = (to) => {
+    return {
+        from: "perrotal.andre@yandex.com.tr",
+        to: to,
+        subject: `Kayıt işleminiz başarılı!`,
+        html: `<h1>Merhaba Kayıt işleminiz tamamlanmıştır.</h1>`
+    }
 }
 
 export { transporter, mailOptions }
