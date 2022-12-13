@@ -952,4 +952,18 @@
     },
     "Request": {},
     "Time": "13.12.2022 - 21:40:13"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/follower/getFollowersByUserId/3",
+        "Method": "GET",
+        "Body": {},
+        "Params": {
+            "userId": "3"
+        },
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 22:53:06"
 }

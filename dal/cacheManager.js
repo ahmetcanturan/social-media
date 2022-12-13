@@ -82,6 +82,29 @@ class cache {
             })
             .catch(err => exception(err))
     }
+    async findMultipleConditionAND(json) {
+        return redis.get(this.key)
+            .then(e => {
+                if (e) {
+                    console.log("Cache de var")
+                    const _key = Object.keys(json)
+                    const _value = Object.values(json)
+                    const list = []
+                    for (const data of JSON.parse(e)) {
+                        if ((data[_key[0]] == _value[0]) & (data[_key[1]] == _value[1])) {
+                            list.push(data)
+                        }
+                    }
+                    const result = (list.length == 0) ? null : list
+                    return result
+                }
+                else {
+                    console.log("Cache de yok")
+                    return null
+                }
+            })
+            .catch(err => exception(err))
+    }
 
 }
 
