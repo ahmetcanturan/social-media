@@ -3,7 +3,7 @@ import md5 from "md5"
 import dns from "dns"
 import os from "os"
 import jwt from "jsonwebtoken"
-
+import fs from "fs"
 
 const forUpdate = (keys) => {
     const list = []
@@ -33,7 +33,7 @@ const hashToPassword = (password) => {
 const getHost = (path) => {
     return new Promise((resolve) => {
         dns.lookup(os.hostname(), (err, ip) => {
-            resolve(`http://${ip}:${process.env.PORT}/${path}`)
+            resolve(`http://${ip}:${process.env.PORT}/${path}`.replace("\\", "/"))
         })
     })
 }
@@ -60,4 +60,14 @@ const verifyToken = (token) => {
     return isVerify
 }
 
-export { forUpdate, validate, hashToPassword, getHost, createToken, verifyToken }
+const fileDelete = (path) => {
+    console.log(path)
+    const route = path.replace("\\", "/")
+    if (fs.existsSync(route)) {
+        fs.unlink(route, (err) => {
+            if (err) console.log(err)
+        })
+    }
+}
+
+export { forUpdate, validate, hashToPassword, getHost, createToken, verifyToken, fileDelete }

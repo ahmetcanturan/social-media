@@ -1,5 +1,5 @@
 import Database from "../dal/DependencyInversion.js"
-
+import { fileDelete } from "../utils/index.js"
 const database = new Database("post")
 
 
@@ -34,7 +34,9 @@ const updateContentPath = async (id, data) => {
     return post
 }
 const deletePost = async (id) => {
+    const _post = await database.db().getById(id)
     const post = await database.db().deleteById(id)
+    fileDelete(_post.content_path)
     return post
 }
 
