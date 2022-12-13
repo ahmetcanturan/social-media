@@ -885,4 +885,51 @@
     },
     "Request": {},
     "Time": "13.12.2022 - 15:05:19"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/mention/getAllMentions",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 16:51:20"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/mention/getAllMentions",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 17:34:39"
+},
+{
+    "Error": {},
+    "Request": {
+        "Ip": "::1",
+        "Url": "/mention/getAllMentions",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "13.12.2022 - 17:44:33"
+},
+{
+    "Error": {
+        "errno": -4078,
+        "code": "ECONNREFUSED",
+        "syscall": "connect",
+        "address": "127.0.0.1",
+        "port": 6379
+    },
+    "Request": {},
+    "Time": "13.12.2022 - 19:28:41"
 }

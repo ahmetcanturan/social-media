@@ -4,7 +4,7 @@ import { exception } from "../logger/index.js"
 const getAllMentions = async (req, res) => {
     try {
         const json = await service.getAllMentions()
-        res.status(201).send(json)
+        return res.status(201).send(json)
     } catch (error) {
         exception(error, req)
         res.status(500).redirect("/")

@@ -8,6 +8,9 @@ import auth from "./middlewares/authMiddleware.js"
 import { exception } from "./logger/index.js"
 import cors from "cors"
 import helmet from "helmet"
+import { createClient } from "redis"
+
+
 dotenv.config()
 
 const app = express()
