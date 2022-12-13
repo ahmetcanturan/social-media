@@ -1,7 +1,7 @@
 import Database from "../dal/DependencyInversion.js"
-
+// import CacheManager from "../dal/cacheManager.js"
 const database = new Database("likemention")
-
+// const cache = new CacheManager("likemention")
 const getAllLikes = async () => {
     const likes = await database.db().getAll()
     return likes

@@ -932,4 +932,24 @@
     },
     "Request": {},
     "Time": "13.12.2022 - 19:28:41"
+},
+{
+    "Error": {
+        "code": "ER_ACCESS_DENIED_ERROR",
+        "errno": 1045,
+        "sqlState": "28000",
+        "sqlMessage": "Access denied for user ''@'localhost' (using password: NO)"
+    },
+    "Request": {},
+    "Time": "13.12.2022 - 21:39:05"
+},
+{
+    "Error": {
+        "code": "ER_ACCESS_DENIED_ERROR",
+        "errno": 1045,
+        "sqlState": "28000",
+        "sqlMessage": "Access denied for user ''@'localhost' (using password: NO)"
+    },
+    "Request": {},
+    "Time": "13.12.2022 - 21:40:13"
 }

@@ -1,4 +1,4 @@
-import express, { Router } from "express"
+import express from "express"
 import MySqlConnect from "./db/MySqlConnect.js"
 import dotenv from "dotenv"
 import MySqlTableCreate from "./db/MySqlTableCreate.js"
