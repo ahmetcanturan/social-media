@@ -1,0 +1,22 @@
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/post/getAllPosts",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "14.12.2022 - 14:17:42"
+},
+{
+    "Request": {
+        "Ip": "::1",
+        "Url": "/label/getAllLabels",
+        "Method": "GET",
+        "Body": {},
+        "Params": {},
+        "Query": {}
+    },
+    "Time": "14.12.2022 - 14:17:42"
+}

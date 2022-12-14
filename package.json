@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "queue": "node rabbitmq/consumer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ahmtcntrn",

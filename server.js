@@ -22,7 +22,7 @@ app.use("/uploads", express.static("uploads"))
 
 //* Logger-Middleware
 app.use(logger)
-// app.use(auth)
+app.use(auth)
 //*Routers----------
 app.use("/user", Routers.User)
 app.use("/post", Routers.Post)
