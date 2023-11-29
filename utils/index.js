@@ -1,3 +1,4 @@
+import { port,secretKey,expresIn } from "../configs/custom-environment-variable.js"
 import { validationResult } from "express-validator"
 import md5 from "md5"
 import dns from "dns"
@@ -33,7 +34,7 @@ const hashToPassword = (password) => {
 const getHost = (path) => {
     return new Promise((resolve) => {
         dns.lookup(os.hostname(), (err, ip) => {
-            resolve(`http://${ip}:${process.env.PORT}/${path}`.replace("\\", "/"))
+            resolve(`http://${ip}:${port}/${path}`.replace("\\", "/"))
         })
     })
 }
@@ -43,16 +44,16 @@ const createToken = (userId, username, email) => {
         userId,
         username,
         email
-    }, process.env.SECRET_KEY, {
+    }, secretKey, {
         issuer: "localhost",
-        expiresIn: process.env.EXPIRESIN
+        expiresIn: expresIn
     })
     return token
 }
 const verifyToken = (token) => {
     const isVerify = { decodedToken: null }
     try {
-        const decodedToken = jwt.verify(token, process.env.SECRET_KEY)
+        const decodedToken = jwt.verify(token,secretKey)
         isVerify.decodedToken = decodedToken
     } catch (error) {
         isVerify.decodedToken = null

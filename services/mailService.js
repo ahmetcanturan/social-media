@@ -1,3 +1,4 @@
+import { mailUser,mailPass } from "../configs/custom-environment-variable.js"
 import nodemailer from "nodemailer"
 
 const transporter = nodemailer.createTransport({
@@ -5,14 +6,14 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.yandex.com',
     port: 465,
     auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS
+        user: mailUser,
+        pass: mailPass
     },
     secure: true
 })
 const mailOptions = (to) => {
     return {
-        from: process.env.MAIL_USER,
+        from: mailUser,
         to: to,
         subject: `Kayıt işleminiz başarılı!`,
         html: `<h1>Merhaba Kayıt işleminiz tamamlanmıştır.</h1>`

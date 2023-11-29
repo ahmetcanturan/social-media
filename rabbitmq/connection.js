@@ -1,11 +1,11 @@
+import { rabbitUser,rabbitPass } from "../configs/custom-environment-variable.js"
 import amqp from "amqplib"
-import dotenv from "dotenv"
-dotenv.config()
+
 
 export default async () => {
     const connection = await amqp.connect({
-        username: process.env.RABBIT_USER,
-        password: process.env.RABBIT_PASS,
+        username: rabbitUser,
+        password:rabbitPass,
     }).then(r => {
         console.log("RabbitMQ Connection Succeed")
         return r
