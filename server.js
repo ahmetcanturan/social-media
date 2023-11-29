@@ -1,6 +1,6 @@
+import { port } from "./configs/custom-environment-variable.js"
 import express from "express"
 import MySqlConnect from "./db/MySqlConnect.js"
-import dotenv from "dotenv"
 import MySqlTableCreate from "./db/MySqlTableCreate.js"
 import * as Routers from "./routers/index.js"
 import logger from "./middlewares/loggerMiddeware.js"
@@ -10,7 +10,6 @@ import cors from "cors"
 import helmet from "helmet"
 import { createClient } from "redis"
 
-dotenv.config()
 
 const app = express()
 app.use(express.json())
@@ -40,8 +39,8 @@ app.use("/likemention", Routers.LikeMention)
 app.use((req, res) => {
     res.json({ status: false, message: "invalid request" }).status(404)
 })
-app.listen(process.env.PORT, () => {
-    console.log(`${process.env.PORT}. Port is Activated..`)
+app.listen(port, () => {
+    console.log(`${port}. Port is Activated..`)
     MySqlConnect.connect((err) => {
         if (err) {
             console.log('MySQL Connection Error', err)
