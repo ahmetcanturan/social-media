@@ -25,7 +25,6 @@
      <li><a href="#an-instance-of-env-file">An Instance Of .env File</a></li>
      <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#how-to-start">How to Start</a></li>
-    <li><a href="#how-to-build">How to Build</a></li>
     <li><a href="#how-to-develop">How to Develop</a></li>
     <li><a href="#endpoints">Endpoints</a>
     <ol>
@@ -100,26 +99,11 @@ MAIL_PASS=
 - Run the project
 
 ```
-npm run dev
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## How to Build
-
-- Build the project
-
-```
-npm run build
-```
-
-- Run the project
-
-```
 npm run start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## How to Develop
 
@@ -133,7 +117,7 @@ git checkout -b new-feature
 - Test your changes
 
 ```
-npm run dev
+npm run start
 ```
 
 - Commit your changes
@@ -180,31 +164,7 @@ Show / Close
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-### Core
-
-#### Health Check
-
-`GET /api/core/healthcheck` <br/>
-
-This endpoint is used to check if the Message API is functioning.
-
-<details>
-  
-<summary>
-Show / Close
-</summary >
-
-    curl -X GET http://localhost:3030/api/core/healthcheck -H
-
-
-</details>
-
-<br/>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Image Crud Operations
+### User
 
 #### Get All
 
