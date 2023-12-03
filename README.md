@@ -28,7 +28,6 @@
     <li><a href="#how-to-develop">How to Develop</a></li>
     <li><a href="#endpoints">Endpoints</a>
     <ol>
-    <li><a href="#swagger">Swagger</a></li>
     <li><a href="#core">Core</a></li>
     <li><a href="#image-crud">Image Crud</a></li>
     </ol>
@@ -137,32 +136,6 @@ git push origin new-feature
 
 
 ## Endpoints
-
-### Swagger
-
-`GET /api/swagger/docs` <br/>
-
-You can test the project with this endpoint.
-
-
-<details>
-  
-<summary>
-Show / Close
-</summary >
-
-    curl -X GET http://localhost:3030/api/swagger/docs -H
-
-
-</details>
-
-
-<br/>
-
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### User
 
