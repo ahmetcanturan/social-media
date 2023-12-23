@@ -41,7 +41,13 @@
 
 ## About The Project
 
+This project constitutes the backend infrastructure for a social media application. Users have the capability to follow each other, like posts, and exchange messages. They can share content in the form of text, video, or images. MySQL is employed as the underlying database.
 
+The project is designed adhering to the principle of dependency injection, making it highly adaptable for a seamless transition to a different database if needed. Server emails are dispatched to users utilizing the RabbitMQ technology.
+
+Upon user registration, the email sending process is enqueued, ensuring efficient handling through a queue mechanism. To enhance performance in delivering frequently accessed data such as follower information, like counts, and shared posts, the project employs the Redis caching method.
+
+Data is cached using Redis to improve response times, and cached data is retrieved directly from the cache during user requests, optimizing the overall system performance.
 
 ### Built With
 
