@@ -220,12 +220,8 @@ Show / Close
 ## Technologies Used
 
 - [Node V18.16.0](https://nodejs.org/en)
-- [Typescript V4.8.4](https://www.typescriptlang.org/)
 - [Npm V9.5.1](https://www.npmjs.com/)
 - [Express V4.18.2](https://www.npmjs.com/package/express)
-- [Mongoose V7.4.3](https://mongoosejs.com/)
-- [AWS - SDK V2.1493.0](https://www.npmjs.com/package/aws-sdk)
-- [Sharp V0.32.6](https://sharp.pixelplumbing.com/)
 - [JWT V9.0.2](https://jwt.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
